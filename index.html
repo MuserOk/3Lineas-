@@ -9,8 +9,180 @@
     <title>Document</title>
 </head>
 
-<body>
+<body class=" hidden:bg-[#192a33] flex flex-col justify-center bg-black">
 
 </body>
+<!--
+ME FALTÓ MODELO RESPONSIVE :(
+
+IDEA: 3 PANTALLAS DISTINTAS... AHORA SE VEN LAS 3, LA IDEA ES QUE ESTEN OCULTAS,
+ Y MOSTRAR EN EL MOMENTO QUE SE NECESITA
+-->
+<!--primera pantalla-->
+<div class="flex flex-col justify-center items-center px-4 gap-6 h-[500px]">
+    <div class=" w-full flex justify-center gap-1">
+        <p class="font-extrabold text-2xl text-[#33c4be]">X</p>
+        <p class="font-extrabold text-2xl text-[#e2b04d]">O</p>
+    </div>
+    <div class=" flex flex-col gap-2 w-full p-2 bg-[#1e3640] rounded-2xl shadow-[0px_4px_6px] shadow-[#1e2020]">
+        <div class=" text-[#97aeb8] text-sm text-center">PICK PLAYER 1´S MARK</div>
+        <div class=" flex justify-around p-2 rounded-xl bg-[#192a33]">
+            <div class=" w-[50%] text-center font-extrabold text-2xl text-[#a9bec8] rounded-md">X</div>
+            <div class=" w-[50%] text-center font-extrabold text-2xl bg-[#a9bec8] rounded-md">O</div>
+        </div>
+        <div class=" text-[#48606a] text-xs text-center ">REMEMBER: X GOES FIRST</div>
+    </div>
+    <div class=" flex flex-col justify-center items-center gap-2 p-2 w-full">
+        <div class=" text-sm text-center font-bold w-full p-2 bg-[#f2b137] rounded-xl">NEW GAME (VS CPU)</div>
+        <div class=" text-sm text-center font-bold w-full p-2 bg-[#33c3bd] rounded-xl">NEW GAME (VS PLAYER)</div>
+    </div>
+</div>
+
+<!--segunda pantalla-->
+<div class="flex flex-col justify-center items-center px-4 gap-6 h-[500px]">
+    <div class="flex justify-between w-full items-center p-2">
+        <div class="flex gap-1 p-1">
+            <div class=" font-extrabold text-2xl text-[#33c4be]">X</div>
+            <div class=" font-extrabold text-2xl text-[#e2b04d]">O</div>
+        </div>
+        <div class="flex gap-1 rounded-md items-center justify-center px-2 text-[#a9bec8] font-bold bg-[#1e363f] shadow-[0px_4px_6px] shadow-black">
+            <div class="text-xl">X</div>
+            <div class="text-xs">TURN</div>
+        </div>
+        <svg class="rounded-md shadow-[0px_0px_8px]" width="34px" height="34px" viewBox="-102.4 -102.4 1228.80 1228.80" xmlns="http://www.w3.org/2000/svg" fill="#b8b7b7" stroke="#b8b7b7" stroke-width="7.168000000000001"><g id="SVGRepo_bgCarrier" stroke-width="0"><rect x="-102.4" y="-102.4" width="1228.80" height="1228.80" rx="0" fill="#a9bec9" strokewidth="0"></rect></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M512 281.6c71.221 0 136.396 32.619 179.2 85.526V256h51.2v204.8H537.6v-51.2h121.511c-32.857-47.165-87.235-76.8-147.111-76.8-98.97 0-179.2 80.23-179.2 179.2 0 98.97 80.23 179.2 179.2 179.2v-.02c73.665 0 138.994-44.857 166.176-111.988l47.458 19.216C690.689 684.711 606.7 742.38 512 742.38v.02c-127.246 0-230.4-103.154-230.4-230.4 0-127.246 103.154-230.4 230.4-230.4z" fill="#000000" fill-rule="nonzero"></path></g></svg>
+    </div>
+    <div class="grid grid-cols-3 place-items-center w-[350px] h-[350px] gap-2">
+        <div class="w-[90%] h-[90%] flex justify-center items-center rounded-xl shadow-[0px_4px_6px] bg-[#1e3640]">
+            <p class="hidden font-extrabold text-6xl text-[#33c4be]">x</p>
+            <p class="hidden font-extrabold text-6xl text-[#e2b04d]">o</p>
+        </div>
+        <div class="w-[90%] h-[90%] flex justify-center items-center rounded-xl shadow-[0px_4px_6px] bg-[#1e3640]">
+            <p class=" font-extrabold text-6xl text-[#33c4be]">x</p>
+            <p class="hidden font-extrabold text-6xl text-[#e2b04d]">o</p>
+        </div>
+        <div class="w-[90%] h-[90%] flex justify-center items-center rounded-xl shadow-[0px_4px_6px] bg-[#1e3640]">
+            <p class="hidden font-extrabold text-6xl text-[#33c4be]">x</p>
+            <p class="font-extrabold text-6xl text-[#e2b04d]">o</p>
+        </div>
+        <div class="w-[90%] h-[90%] flex justify-center items-center rounded-xl shadow-[0px_4px_6px] bg-[#1e3640]">
+            <p class="font-extrabold text-6xl text-[#33c4be]">x</p>
+            <p class="hidden  font-extrabold text-6xl text-[#e2b04d]">o</p>
+        </div>
+        <div class="w-[90%] h-[90%] flex justify-center items-center rounded-xl shadow-[0px_4px_6px] bg-[#1e3640]">
+            <p class="hidden font-extrabold text-6xl text-[#33c4be]">x</p>
+            <p class="font-extrabold text-6xl text-[#e2b04d]">o</p>
+        </div>
+        <div class="w-[90%] h-[90%] flex justify-center items-center rounded-xl shadow-[0px_4px_6px] bg-[#1e3640]">
+            <p class="font-extrabold text-6xl text-[#33c4be]">x</p>
+            <p class="hidden font-extrabold text-6xl text-[#e2b04d]">o</p>
+        </div>
+        <div class="w-[90%] h-[90%]  flex justify-center items-center rounded-xl shadow-[0px_4px_6px] bg-[#1e3640]">
+            <p class="hidden font-extrabold text-6xl text-[#33c4be]">x</p>
+            <p class="hidden font-extrabold text-6xl text-[#e2b04d]">o</p>
+        </div>
+        <div class="w-[90%] h-[90%]  flex justify-center items-center rounded-xl shadow-[0px_4px_6px] bg-[#1e3640]">
+            <p class="hidden font-extrabold text-6xl text-[#33c4be]">x</p>
+            <p class="font-extrabold text-6xl text-[#e2b04d]">o</p>
+        </div>
+        <div class="w-[90%] h-[90%]  flex justify-center items-center rounded-xl shadow-[0px_4px_6px] bg-[#1e3640]">
+            <p class=" font-extrabold text-6xl text-[#33c4be]">x</p>
+            <p class="hidden font-extrabold text-6xl text-[#e2b04d]">o</p>
+        </div>
+    </div>
+    <div class=" flex justify-center items-center gap-4 w-[350px] px-2">
+        <div class=" text-sm text-center font-bold w-full p-2 bg-[#33c3bd] rounded-md">
+            <p>X (YOU)</p>
+            <p class="font-extrabold text-xl">14</p>
+        </div>
+        <div class=" text-sm text-center font-bold w-full p-2 bg-[#a9bec8] rounded-md">
+            <p>TIES</p>
+            <P class="font-extrabold text-xl">32</P>
+        </div>
+        <div class=" text-sm text-center font-bold w-full p-2 bg-[#f2b137] rounded-md">
+            <P>O (CPU)</P>
+            <P class="font-extrabold text-xl">11</P>
+        </div>
+    </div>
+</div>
+
+<!--tercer pantalla-->
+<div class="relative">
+    <div class="flex flex-col justify-center items-center px-4 gap-6 h-[500px] opacity-40 ">
+        <div class="flex justify-between w-full items-center p-2">
+            <div class="flex gap-1 p-1">
+                <div class=" font-extrabold text-2xl text-[#33c4be]">X</div>
+                <div class=" font-extrabold text-2xl text-[#e2b04d]">O</div>
+            </div>
+            <div class="flex gap-1 rounded-md items-center justify-center px-2 text-[#a9bec8] font-bold bg-[#1e363f] shadow-[0px_4px_6px] shadow-black">
+                <div class="text-xl">X</div>
+                <div class="text-xs">TURN</div>
+            </div>
+            <svg class="rounded-md shadow-[0px_0px_8px]" width="34px" height="34px" viewBox="-102.4 -102.4 1228.80 1228.80" xmlns="http://www.w3.org/2000/svg" fill="#b8b7b7" stroke="#b8b7b7" stroke-width="7.168000000000001"><g id="SVGRepo_bgCarrier" stroke-width="0"><rect x="-102.4" y="-102.4" width="1228.80" height="1228.80" rx="0" fill="#a9bec9" strokewidth="0"></rect></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M512 281.6c71.221 0 136.396 32.619 179.2 85.526V256h51.2v204.8H537.6v-51.2h121.511c-32.857-47.165-87.235-76.8-147.111-76.8-98.97 0-179.2 80.23-179.2 179.2 0 98.97 80.23 179.2 179.2 179.2v-.02c73.665 0 138.994-44.857 166.176-111.988l47.458 19.216C690.689 684.711 606.7 742.38 512 742.38v.02c-127.246 0-230.4-103.154-230.4-230.4 0-127.246 103.154-230.4 230.4-230.4z" fill="#000000" fill-rule="nonzero"></path></g></svg>
+        </div>
+        <div class="grid grid-cols-3 place-items-center w-[350px] h-[350px] gap-2">
+            <div class="bg-[#33c4be] w-[90%] h-[90%] flex justify-center items-center rounded-xl shadow-[0px_4px_6px] hidden:bg-[#1e3640]">
+                <p class=" font-extrabold text-6xl hidden:text-[#33c4be] text-[#1e3640]">x</p>
+                <p class="hidden font-extrabold text-6xl text-[#e2b04d]">o</p>
+            </div>
+            <div class="bg-[#33c4be] w-[90%] h-[90%] flex justify-center items-center rounded-xl shadow-[0px_4px_6px] hidden:bg-[#1e3640]">
+                <p class=" font-extrabold text-6xl hidden:text-[#33c4be] text-[#1e3640]">x</p>
+                <p class="hidden font-extrabold text-6xl text-[#e2b04d]">o</p>
+            </div>
+            <div class="bg-[#33c4be] w-[90%] h-[90%] flex justify-center items-center rounded-xl shadow-[0px_4px_6px] hidden:bg-[#1e3640]">
+                <p class=" font-extrabold text-6xl hidden:text-[#33c4be] text-[#1e3640]">x</p>
+                <p class="hidden font-extrabold text-6xl text-[#e2b04d]">o</p>
+            </div>
+            <div class="w-[90%] h-[90%] flex justify-center items-center rounded-xl shadow-[0px_4px_6px] bg-[#1e3640]">
+                <p class="font-extrabold text-6xl text-[#33c4be]">x</p>
+                <p class="hidden  font-extrabold text-6xl text-[#e2b04d]">o</p>
+            </div>
+            <div class="w-[90%] h-[90%] flex justify-center items-center rounded-xl shadow-[0px_4px_6px] bg-[#1e3640]">
+                <p class="hidden font-extrabold text-6xl text-[#33c4be]">x</p>
+                <p class="font-extrabold text-6xl text-[#e2b04d]">o</p>
+            </div>
+            <div class="w-[90%] h-[90%] flex justify-center items-center rounded-xl shadow-[0px_4px_6px] bg-[#1e3640]">
+                <p class="font-extrabold text-6xl text-[#33c4be]">x</p>
+                <p class="hidden font-extrabold text-6xl text-[#e2b04d]">o</p>
+            </div>
+            <div class="w-[90%] h-[90%]  flex justify-center items-center rounded-xl shadow-[0px_4px_6px] bg-[#1e3640]">
+                <p class="hidden font-extrabold text-6xl text-[#33c4be]">x</p>
+                <p class="hidden font-extrabold text-6xl text-[#e2b04d]">o</p>
+            </div>
+            <div class="w-[90%] h-[90%]  flex justify-center items-center rounded-xl shadow-[0px_4px_6px] bg-[#1e3640]">
+                <p class="hidden font-extrabold text-6xl text-[#33c4be]">x</p>
+                <p class="font-extrabold text-6xl text-[#e2b04d]">o</p>
+            </div>
+            <div class="w-[90%] h-[90%]  flex justify-center items-center rounded-xl shadow-[0px_4px_6px] bg-[#1e3640]">
+                <p class=" font-extrabold text-6xl text-[#33c4be]">x</p>
+                <p class="hidden font-extrabold text-6xl text-[#e2b04d]">o</p>
+            </div>
+        </div>
+        <div class=" flex justify-center items-center gap-4 w-[350px] px-2">
+            <div class=" text-sm text-center font-bold w-full p-2 bg-[#33c3bd] rounded-md">
+                <p>X (YOU)</p>
+                <p class="font-extrabold text-xl">14</p>
+            </div>
+            <div class=" text-sm text-center font-bold w-full p-2 bg-[#a9bec8] rounded-md">
+                <p>TIES</p>
+                <P class="font-extrabold text-xl">32</P>
+            </div>
+            <div class=" text-sm text-center font-bold w-full p-2 bg-[#f2b137]  rounded-md">
+                <P>O (CPU)</P>
+                <P class="font-extrabold text-xl">11</P>
+            </div>
+        </div>
+    </div>
+    <div class="absolute top-48 flex  flex-col items-center gap-2 bg-[#1e363f] w-full p-6 pt-10 h-56">
+        <div class="text-white">YOU WON!</div>
+        <div class="text-[#33c3bd] font-bold gap-2 items-center flex">
+            <p class="text-3xl">X</p>
+            <p>TAKES THE ROUND</p>
+        </div>
+        <div class="flex gap-2 font-bold pt-2">
+            <p class="bg-[#a9bec8] p-2 rounded-md">QUIT</p>
+            <p class="bg-[#f2b137] p-2 rounded-md">NEXT ROUND</p>
+        </div>
+    </div>
+</div>
 
 </html>
